@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Hotel Senja</title>
+    <link rel="stylesheet" href="css/awokawok.css">
+    <link rel="stylesheet" href="css/style-doank.css">
+</head>
+
+
+<body>
+<div class="padding-voss teks-ganti">
+
+    <div class="value-center auth-center kotak-anj form">
+        <div>
+           <h2 class="h-nih-voss padding-bawah padding-atas font-kolor-apaaja">Form Register</h2>
+        </div>
+        
+<!-- yg action ganti apa -->
+    <form action="login.html" class="container">
+        <div>
+            <h6 class="font-kolor-apaaja">Masukkan Username</h6>
+            <input type="text" class="form-control" placeholder="Masukkan Email/Username">
+            <br>
+            <h6 class="font-kolor-apaaja">Masukan Email</h6>
+            <input type="email" class="form-control" placeholder="Masukkan Email Anda">
+            <br>
+            <h6 class="font-kolor-apaaja">Masukan password</h6>
+            <input type="password" class="form-control" placeholder="Masukkan Password Anda">
+            <br>
+            <h6 class="font-kolor-apaaja">Masukan No.HP</h6>
+            <input type="text" name="angka" class="form-control" placeholder="Masukkan No.Ponsel" onkeypress="return hanyaAngka(event)">
+            <br>
+        </div>
+            <a href="login.html"><button type="button" class="btn btn-danger btn-block tombol-kolor" style="border: 0;">Register Hotel Senja</button></a>
+    </form>
+    <h6 class="h-nih-voss mt-4">Udh punya Akun<a href="login.html"> Klik Disini</a></h6>
+    </div>
+</div>
+
+<script>
+    function hanyaAngka(event) {
+        var angka = (event.which) ? event.which : event.keyCode
+        if (angka != 46 && angka > 31 && (angka < 48 || angka > 57))
+            return false;
+        return true;
+    }
+</script>
+
+</body>
+</html>
+
+<!-- gua bikin sendiri ya ASW (gua gak pake template) -->
